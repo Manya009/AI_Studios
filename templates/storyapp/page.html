@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <title>Story Generation</title>
+
+    <style>#rightbox{float:right;}</style>
+
+</head>
+<body class="p-3 mb-2 bg-info-subtle text-emphasis-info">
+
+<div id = "rightbox">
+<a href="/" class="btn btn-primary">Home</a>
+</div>
+
+<h1>Story Generation ✍🏻</h1><br>
+
+
+<div class="d-flex justify-content-center">
+<div class="w-75 p-3 mb-2 bg-dark text-white ">
+<div class="container">
+   <form action="" method="POST">
+       {% csrf_token %}
+              <div class="input-group input-group-lg">
+        <span class="input-group-text">Start Writing</span>
+        <input type="text" name="prompt" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-lg" required>
+       </div><br>
+
+       <div class="d-flex justify-content-center"  style="margin-bottom: 20px;">
+           <input type="submit" class="btn btn-primary btn-lg" align="center"><br></div>
+
+       {%if reslut%}
+        <h2><br>GENERATED TEXT: {{reslut}} </h2><br>
+
+         <div class="d-flex justify-content-center">
+            <a href="{% url 'story' %}" class="btn btn-primary btn-lg" role="button">Go to Movie Generator!</a>
+         </div>
+
+       {%endif%}
+
+
+   </form>
+</div>
+</div>
+</div>
+</body>
+</html>
