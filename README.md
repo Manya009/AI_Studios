@@ -29,5 +29,6 @@ We are excited to present a comprehensive Django web application designed to cat
 In conclusion, our project represents a unique fusion of cutting-edge technologies to deliver a versatile and accessible platform for creative content generation. Whether users are aspiring writers, poets, or visual storytellers, our web application aims to inspire and facilitate their creative journey.
 
 **Working Link:**
+
 [![Your Video](https://img.youtube.com/vi/wFT0a0qqnBM/0.jpg)](https://youtu.be/wFT0a0qqnBM?si=I0nHeZRHdxHSN-k2)
 
